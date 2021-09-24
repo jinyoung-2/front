@@ -1,0 +1,639 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('../font/Gotham-Bold.woff2') format('woff2'),
+        url('../font/Gotham-Black.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../font/Gotham-Bold.woff2') format('woff2'),
+        url('../font/Gotham-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    src: url('../font/SpoqaHanSansNeo-Bold.woff2') format('woff2'),
+        url('../font/SpoqaHanSansNeo-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    src: url('../font/SpoqaHanSansNeo-Medium.woff2') format('woff2'),
+        url('../font/SpoqaHanSansNeo-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 전체적인 레이아웃 */
+#container{
+  width: 1000px;
+  margin: 20px auto;
+}
+header{
+  width: 100%;
+  height: 100px;
+}
+nav{
+  width: 100%;
+  height: 100px;
+}
+aside{
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 10;
+}
+.nav_btn{
+  background-color: rgba(30,205,214,0.5);
+  width: 50px;
+  height: 50px;
+  border-radius: 50% 50%;
+}
+.nav_gray_btn{
+  margin-top: 25px;
+  background-color: rgba(0,0,0,0.1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50% 50%;
+}
+footer{
+  width: 100%;
+  height:100px;
+  padding-top: 200px;
+  font-size: 0.7em;
+}
+footer div{
+  text-align: left;
+}
+
+/* 제주맥주 로고 */
+.logo{
+  width: 70%;
+  float: left;
+  padding-left: 15%;
+  margin: 0;
+}
+.logo a:hover, .logo a:focus{
+  text-decoration: none;
+}
+
+/* Login Join */
+.user_info{
+  width: 10%;
+  float:left;
+  margin-left: -10%;
+  padding-top: 80px;
+}
+.user_info a:hover, .user_info a:focus{
+  text-decoration: none;
+  background-color: rgb(235, 235, 235);
+}
+
+.clear{
+  clear: left;
+}
+
+/* 전체적인 text에 관한 설정  */
+*{
+  font-family: 'Gotham', 'Spoqa Han Sans Neo';
+  color:#666;
+  font-size:1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* 그 이후의 세부적인 설정 */
+a{   
+  display: inline-block;   
+}
+a:link, a:visited{
+  text-decoration: none;  /* 하이퍼링크 밑줄 제거 */
+}
+a:hover,a:focus{
+  text-decoration: underline;
+}
+
+
+/* 제거하기!! */
+/* .middle{
+  text-align: center;
+} */
+
+
+h1{
+  color:#1ecad3;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+h2{
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+h3{
+  color:#1ecad3;
+  font-weight: bold;
+  font-size: 1.5em;
+  /* text-align: left; */
+}
+.left,li{
+  text-align: left;
+}
+h6,.quote{
+  font-size: 0.8em;
+}
+
+
+p.event_product{
+  font-size: 1.4em;
+}
+
+ul{ /* 내비게이션에 사용된 <li>태그의 불릿 제거 */
+  list-style-type: none;
+}
+
+/* 네비게이션 목록 태그 가로 방향으로 배치 */
+li{
+  display: inline-block;
+  padding: 30px;
+  margin: 0px auto;
+}
+
+#ex_ch{
+  list-style-type: disc;
+}
+
+table{
+  border-top: 2px solid #444;
+  border-bottom: 2px solid #444;
+  /* Q. index.html에서는 아래코드가 없어도, 경계선이 collapse된것처럼 보이는 이유가 무엇인가? */
+  border-collapse: collapse; 
+  margin: 20px auto;   
+}
+
+.index_html_table_height1{
+  height: 80px;
+}
+#index_html_table_height1_1{
+  padding-top: 20px;
+}
+.index_html_table_height2{
+  height: 50px;
+}
+
+#index_html_table{
+  width: 25%;
+} 
+
+#table_index{
+  width: 33%;
+}
+
+.btn-shape{
+  margin: 0px auto;
+  padding-top: 10px;
+  width: 400px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #1ecad3;
+}
+.bigger-size-font{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.round{
+  /* display에 대한 코드가 없을 떄는 block으로 처리되서, 화면에 꽉창 */
+  display: inline-block;
+  border-radius: 40px;
+  background-color: #1ecad3;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+/* index.html*/
+.event-area{
+  background-image: url(../img/bg1.png);
+  width: 100%;
+  height: 1000px;
+  background-size: 110%;
+  background-position: center bottom;  
+  background-repeat: no-repeat;  
+  position: relative;
+}
+.transparency-box{
+  width: 100%;
+  height: 150px;
+}
+.center-allign{
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  width: 40%;
+}
+.suffer{
+  width: 300px;
+  position: absolute;
+  bottom: 2%;
+  right: 10%;
+}
+
+/* 이벤트 상품 layout  */
+.display_layout_wrap{
+  width: 100%;
+}
+.display_layout{
+  width: 32%;
+  display: inline-block;
+  margin: 50px auto;
+  padding-right: 10px;
+}
+/* quiz */
+.quiz-area{
+  position: relative;
+  background-size: cover;
+  height: 300px;
+  margin-top: 100px;
+}
+.quiz-background1{
+  background-image: url(../img/bg2.jpg);
+}
+.quiz-background2{
+  background-color: #fcf9ed;
+  width: 100%;
+  height: 150px;
+}
+.quiz-text{
+  position: absolute;
+  left: 38%;
+  top: 30%;
+}
+.quiz-img-area{
+  background-image: url(../img/bg3.png);
+  background-size: 100% 600px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  margin-top: -60px;
+}
+.start-btn{
+  position: absolute;
+  left: 45%;
+  bottom: -60%;
+  animation: btn-anima 6s infinite;
+}
+@keyframes btn-anima{
+  0%{transform: translate(0,0);}
+  25%{transform: translateY(-20%);}
+  75%{transform: translateY(20%);}
+  100%{transform: translate(0,0);}
+}
+
+
+/* about_us.html의 버튼 layout */
+.display5_layout{
+  width: 32%;
+  display: inline-block;
+  margin: 50px -200px 50px;
+}
+#margin_bottom{
+  margin-bottom: -5px;
+}
+/* about_us.html의 직원소개 layout */
+.display3_layout{
+  display: inline-block;
+  background-color: rgb(251, 250, 246);
+  margin: 50px 20px 50px;
+  /* margin의 역할이 있어서 요소사이의 간격은 margin으로 처리 */
+  border: 2px solid rgb(223, 222, 222);
+  overflow: hidden;
+}
+.space1{
+  padding-top: 100px;
+  border-bottom: 2px solid rgb(212, 210, 210);
+}
+.space2{
+  padding-top: 100px;
+}
+#space3{
+  padding-top: 50px;
+}
+.image_text_box{
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.inner_text{
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+
+
+.display2_layout{
+  display: inline-block;
+  padding-right: 30px;
+  /*  Q. 아래 코드를 추가시, 아이콘이 한 줄로 배치가 안 됨. 그 이유는 무엇인가?
+  box-sizing: border-box; */
+}
+/* Q. 상대적인 위치를 사용하는 이유가 무엇인가? */
+#speciality_icon1{
+  position:relative;
+  top: 0;
+}
+#speciality_icon2{
+  position: relative;
+  top: -80px;
+}
+#speciality_icon3{
+  position: relative;
+  top: -30px;
+}
+
+
+
+/* shop.html layout */
+#shop{
+  width: 100%;
+  height: 3000px;
+  border: 5px solid #000;
+}
+.display4_layout{
+  width: 48%;
+  display: inline-block;
+  margin: -10px -5px 0 -26px;
+  padding: 0;
+  position: relative;
+  /* overflow: hidden; */
+}
+#shop p{
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: left;
+}
+.width_50{
+  width: 50%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.text_bold{
+  font-weight: bold;
+}
+.d4_text{
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+/* text 정렬에서 line-height 말고 다른 방법으로 정렬하는 법은 없을까? */
+#Mcs{
+  display: inline-block;
+  margin: -7px 0 0 -5px;
+  width: 600px;
+  height: 600px;
+  background-color: #1ecad3;
+  overflow: hidden;
+  /* text관련 */
+  color: #fff;
+  font-size: 50px;
+  line-height: 600px;
+}
+.describe_content{
+  margin: 20px auto;
+}
+
+/* 넓이 조절 */
+.width_100{
+  width: 100%;
+  overflow: hidden;
+}
+
+.white_font{
+  color: #fff;
+}
+
+/* news.html */
+/*table */
+.news_table_wrap{
+  border-top: 1.5px solid rgb(44, 42, 42);
+  /* border-bottom: 0.8px solid #444; */
+  border-collapse: collapse; 
+  margin: 30px auto;
+  width: 60%;
+}
+.news_table{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 0.8px solid rgb(218, 213, 213);
+  text-align: left;
+}
+.news_table2{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 0.8px solid rgb(218, 213, 213);
+}
+
+/* 슬라이드 애니메이션 */
+#slide{
+  width: 80%;
+  height: 500px;
+  overflow: hidden;
+  margin:0 auto;
+  padding: 0;
+}
+#slide ul{
+  width: 400%;
+  height: 100%;
+  padding-left: 0;
+  display: flex;
+  animation: slide 8s infinite;
+  list-style: none;
+}
+#slide li{
+  width:25%;
+  height: 100%;
+  list-style: none;
+}
+#slide li:nth-child(1){background-image: url('../img/news1.png');background-position: center center;}
+#slide li:nth-child(2){background-image: url('../img/news2.png');background-repeat: no-repeat;background-position: right center;background-size: cover;}
+#slide li:nth-child(3){background-image: url('../img/news3.png');background-position: center center;}
+#slide li:nth-child(4){background-image: url('../img/about1.png');background-repeat: no-repeat;background-position: center center;background-size: cover;}
+@keyframes slide {
+      0% {margin-left: 0;}
+      10% { margin-left: 0;}
+      25% {margin-left: -100%;}
+      35% {margin-left: -100%;}
+      50% {margin-left: -200%;}
+      60% {margin-left: -200%;}
+      75% {margin-left: -300%;}
+      85% {margin-left: -300%;}
+      100% {margin-left: 0;}
+    }
+
+/* join_agree.html */
+#jo_ag{
+  margin: 0 auto;  
+  width: 40%;
+  padding-left: 12%;
+  height: 60%;
+}
+#jo_ag div{
+  text-align: left;
+}
+
+.margin_down1{
+  margin-bottom: 0;
+}
+.margin_down2{
+  margin-top: 0;
+  margin-bottom: 65px;
+}
+.join-checkbox{
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.join-btn{
+  /* margin: 0 auto; */
+  padding-left:130px;
+}
+.join-btn button[type=reset]{
+  background-color: #fff;
+  border: 0.5px solid rgb(206, 206, 206);
+  width: 90px;
+  height: 40px;
+}
+.join-btn button[type=submit]{
+  color: #fff;
+  background-color: #1ecad3;
+  border: 0.5px solid rgb(206, 206, 206);
+  width: 90px;
+  height: 40px;
+}
+/* ::after 가상요소 */
+.join-agree-after::after{
+  content: "(필수)";
+  color: red;
+}
+
+
+/* join.html */
+#join-wrap{
+  width: 30%;
+  height: 800px;
+  margin: 0 auto;
+}
+#join-wrap input[type=file]{
+  margin-bottom: 50px;
+}
+#join-wrap input[placeholder]{
+  text-align: left;
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgb(233, 233, 233);
+  color: #ccc;
+  font-weight: 100;
+}
+#join-wrap input[type=file]{
+  height: 40px;
+  width: 150px;
+  background-image: url(../img/93493545-people-icon.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  border-radius: 50%;
+  
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+  border: 1px solid rgb(218, 218, 218);
+}
+.checkbox{
+  width: 100%;
+  height: 30px;
+}
+.join-after::after{
+  content: "·";
+  font-size: larger;
+  font-weight: bolder;
+  color: red;
+}
+.join-box{
+  margin-bottom: 30px; 
+  text-align: left;
+}
+
+
+#join-wrap button[type=submit]{
+  width: 100%;
+  height: 30px;
+  background-color: #1ecad3;
+  color: white;
+  border: none;
+}
+
+
+/* login.html */
+
+#signin input[placeholder]{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: -1px 10px;
+  width: 300px;
+  padding: 10px;
+  text-align: left;
+}
+
+#signin button[type=submit]{
+  border-radius: 0px;
+  width: 320px;
+  height: 50px;
+  border: none;
+  letter-spacing: 0.5em;
+  font-size: 1.2em;
+  background-color: #1ecad3;
+  color: white;
+  margin: 0 auto 20px auto;
+}
+.checkbox-area{
+  margin: 20px auto 25px -180px;
+}
+#align-wrap{
+  width: 320px;
+  height:50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.align-left{
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+.align-left>a{
+  text-decoration: underline;
+}
+.align-right{
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+.align-right>a{
+  text-decoration: underline;
+}

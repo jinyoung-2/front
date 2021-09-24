@@ -1,0 +1,89 @@
+<!-- 상품 작성 전용 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>DIVE INTO DIVERSITY</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <h1>제주맥주</h1>
+      </a>
+    </div>
+    <div class="user_info">
+      <a href="login.html">LOGIN</a>
+      <a href="join_agree.html">JOIN</a>
+    </div>
+  </header>
+  <nav class="clear">
+    <div>
+      <ul>
+        <li><a href="index.html">EVENT</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="about_us.html">ABOUT US</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+  <aside>
+    <div class="nav_btn">
+      <a href="#"><img src="./img/share.png" width="50"></a>
+    </div>
+    <div class="nav_gray_btn">
+      <a href="#"><img src="./img/up.png" width="50"></a>
+    </div>
+  </aside>
+  <main>
+    <div>
+      <form method="POST" enctype="multipart/form-data">
+        <!-- 대표이미지 등록, 영문이름, 한글이름, 가격 작성
+          => 결과: 데이터 발생 후 사용자에게 보여줌-->
+        <div>
+          <input id="image" name="image" type="file"> <!-- 대표이미지 파일 업로드 -->
+        </div>
+        <div>
+          <!-- 상품정보 -->
+          <input id="E_name" name="E_name" type="text" placeholder="영어상품명"><br>
+          <input id="K_name" name="K_name" type="text" placeholder="한글상품명"><br>
+          <!-- 제품 가격 -->
+          &#8361; <input id="price" name="price" type="text" placeholder="제품 가격">
+        </div>
+        <!-- 수량 -->
+
+        <!-- 상품에 관한 글 -->
+        <textarea name="product_info" id="product_info"" cols=" 100" rows="25"></textarea>
+        <!-- 이미지 -->
+
+        <!-- 상품정보 -->
+        <!-- 영양정보 -->
+      </form>
+    </div>
+    <div>
+      <h3>배송안내</h3>
+      <p>전국택배배송 | CJ대한통운</p>
+      <textarea name="delivery_info" id="delivery_info" cols="100" rows="30">
+      </textarea>
+    </div>
+    <div>
+      <h3>교환 및 환불 안내</h3>
+      <textarea name="exchange_refund" id="exchange_refund" cols="100" rows="30">
+      </textarea>
+    </div>
+  </main>
+  <footer>
+    <div>
+      제주맥주 주식회사 대표이사 XXX<br>
+      본사) 본사 주소
+      호스팅 제공자 XXX&nbsp;&nbsp;&nbsp;사업자등록번호 xxx-xx-xxxx&nbsp;&nbsp;&nbsp;
+      개인정보보호책임자 XXX&nbsp;&nbsp;&nbsp;고객센터 xx-xxxx-xxxx, xxxx&commat;xxxx.co.kr
+    </div>
+  </footer>
+</body>
+
+</html>

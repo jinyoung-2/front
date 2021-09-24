@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>DIVE INTO DIVERSITY</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <h1>제주맥주</h1>
+      </a>
+    </div>
+    <div class="user_info">
+      <a href="login.html">LOGIN</a>
+      <a href="join_agree.html">JOIN</a>
+    </div>
+  </header>
+  <nav class="clear">
+    <div>
+      <ul>
+        <li><a href="index.html">EVENT</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="about_us.html">ABOUT US</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+  <aside>
+    <div class="nav_btn">
+      <a href="#"><img src="./img/share.png" width="50"></a>
+    </div>
+    <div class="nav_gray_btn">
+      <a href="#"><img src="./img/up.png" width="50"></a>
+    </div>
+  </aside>
+  <main>
+    <div>
+      <video class="width_100" src="./videos/about_us.mp4" playsinline autoplay muted loop>
+        이 브라우저는 지원하지 않습니다.
+      </video>
+    </div>
+    <div>
+      <!-- 페이지내 이동 -->
+      <div class="display5_layout"><a href="#about_us">
+          <div class="round white_font">ABOUT US</div>
+        </a></div>
+      <div class="display5_layout"><a href="#our_team">
+          <div class="round white_font">OUR TEAM</div>
+        </a></div>
+    </div>
+    <article id="about_us" class="describe_content">
+      <h1>ABOUT US</h1>
+      <section>
+        <h2>WE ARE</h2>
+        <div>
+          <p>
+            왜 한국인들의 인생 맥주는 수입맥주일까?<br>
+            왜 소맥 문화가 아닌 맥주만의 문화가 없을까?<br>
+            왜 맥주가 탄생하는 과정을 보여주고 알려줄 수 없을까?<br>
+            왜 우리나라에는 꼭 가보고 싶은 양조장이 없을까?<br>
+          </p>
+          <p>
+            제주맥주가 태어난 이유인 이 질문들에 대한 답이<br>
+            우리가 하는 모든 일입니다.
+          </p>
+          <p>
+            크래프트 맥주계의 리더로,<br>
+            공장이 아닌 양조장을<br>
+            제조 회사를 넘어 문화 기업을 만들며<br>
+            한국 맥주 시장을 새롭게 선도합니다.
+          </p>
+        </div>
+        <div>
+          <img class="width_100" src="./img/about1.png">
+        </div>
+      </section>
+      <section>
+        <h2>ACCOMPLISHMENTS</h2>
+        <p>
+          <strong>국내 최초 글로벌 크래프트 맥주사</strong>
+        <blockquote class="quote">미국 뉴욕 판매 1위 크래프트맥주사 브루클린 브루어리와의 아시아 첫 파트너십</blockquote>
+        </p>
+        <p>
+          <strong>맥주업계 최초 중소벤처기업부 '예비 유니콘' 선정</strong>
+        </p>
+        <p>
+          <strong>누적 투자액 600억 돌파 (2020년 기준)</strong>
+        </p>
+        <p>
+          <strong>런칭 후 매년 200% 이상 매출 성장 (2020년 기준)</strong>
+        </p>
+        <p>
+          <strong>제주 양조장 방문객 누적 약 10만 명 (2020년 기준</strong>
+        <blockquote class="quote">제주도의 새로운 관광 명소로 자리매김</blockquote>
+        </p>
+        <p>
+          <strong>현대카드, 배틀그라운드, 이니스프리, 하이랜드파크 등과의 콜라보레이션</strong>
+        </p>
+      </section>
+      <section>
+        <!-- 이미지 안 글자 배열    or    이미지 위에 글씨 쓰기 -->
+        <!-- Q. white_font class를 image-text-box class와 동일한 위치의 코드에 작성하면, font color변화가 없습니다. 
+        이유가 무엇인가요?
+        A. font color의 경우, CSS상속이 불가능함
+        Q. class or id selector를 아래 코드의 제일 넓은 범위의 div에 설정하는 것이 좋나요 아니면 text태그인 h1와 p태그마다 설정하는 것이 좋은가요? 
+        A. 후자 추천!-->
+        <div class="image_text_box">
+          <img class="width_100" src="./img/about2.png">
+          <div class="inner_text">
+            <h2 class="white_font">MISSION</h2>
+            <p class="white_font">
+              한국 크래프트 맥주의 선구자로 좋은 맥주를 통해<br>
+              맥주 미식문화를 창조합니다.
+            </p>
+          </div>
+        </div>
+        <!-- 간격이 안 맞앙.. 어떻게 해결하지?
+        -> 상대적인 position 이용 -->
+        <div>
+          <h2>SPECIALTY</h2>
+          <div class="display2_layout" id="speciality_icon1">
+            <img src="./img/icon1.png">
+            <h3>레시피</h3>
+            <p>
+              맥주 업게 최초 전 세계 세프들의<br>
+              오스카상인 제임스비어드상 수상자<br>
+              브루마스터 개릿 올리버의 <b>제주 위트 에일 레시피</b>
+            </p>
+            <p>
+              뉴욕 <b>NO.1</b> 브루클린 브루어리 <b>30년</b>양조 노하우
+            </p>
+            <p>
+              <b>15</b>년 이상의 양조 경력을 보유한<br>
+              세계 반열의 브루어 다수 참여
+            </p>
+          </div>
+          <div class="display2_layout" id="speciality_icon2">
+            <img src="./img/icon2.png">
+            <h3>원료</h3>
+            <p>
+              독일, 미국 등 현지 청정지역에서 재배한 <strong>홉</strong>
+            </p>
+            <p>
+              프리미엄 유럽산 <strong>맥아</strong>
+            </p>
+            <p>
+              제주도에서 직접 배양 및 관리하는 <strong>효모</strong>
+            </p>
+          </div>
+          <div class="display2_layout" id="speciality_icon3">
+            <img src="./img/icon3.png">
+            <h3>기술과 과학</h3>
+            <p>
+              브루클린 브루어리의 축적된 기술과<br>
+              과학의 노하우 전수
+            </p>
+            <p>
+              유럽 최고의 양조설비로 고품질 맥주 생산
+            </p>
+            <p>
+              세계 각지에서 공수한 맥주<br>
+              연구 측정 장비로 엄격한 품질 관리
+            </p>
+          </div>
+        </div>
+        <div id="space3">
+          <h2>BRAND SYMBOL</h2>
+          <div>
+            <img src="./img/about3.gif">
+          </div>
+          <p>
+            제주맥주가 탄생한 제주도의 지형적 특성을 아이콘화했습니다.
+          </p>
+          <p>제주지역, 제주맥주, 더 나아가 크래프트 맥주 시장의 번영을<br>
+            폭발이라는 메타포를 사용하여 표현했습니다.</p>
+          <div class="round white_font">
+            LOGO DOWNLOAD
+          </div>
+        </div>
+      </section>
+      </section>
+      <div class="space1"></div>
+      <div class="space2"></div>
+      <section id="our_team">
+        <div>
+          <div>
+            <h1 id="margin_bottom">OUR TEAM</h1>
+            <p>
+              맥주만 만드는 사람들이 아닙니다.<br>
+              제주의 문화를 만들어가는 다양한 매력의 우리를 만나보세요.
+            </p>
+          </div>
+          <div class="display3_layout">
+            <img class="width_100" src="./img/employee1.png">
+            <h4>차귀도 일몰 다이빙</h4>
+            이세기/생산
+          </div>
+          <div class="display3_layout">
+            <img class="width_100" src="./img/employee2.png">
+            <h4>온 더 로드</h4>
+            최일규/생산
+          </div>
+          <div class="display3_layout">
+            <img class="width_100" src="./img/employee3.png">
+            <h4>도깨비 도로 위의 인라인</h4>
+            백승준/생산
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <div>
+      제주맥주 주식회사 대표이사 XXX<br>
+      본사) 본사 주소
+      호스팅 제공자 XXX&nbsp;&nbsp;&nbsp;사업자등록번호 xxx-xx-xxxx&nbsp;&nbsp;&nbsp;
+      개인정보보호책임자 XXX&nbsp;&nbsp;&nbsp;고객센터 xx-xxxx-xxxx, xxxx&commat;xxxx.co.kr
+    </div>
+  </footer>
+</body>
+
+</html>
+<!-- https://jejubeer.co.kr/about -->
